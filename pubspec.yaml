@@ -1,0 +1,39 @@
+
+name: rafiq_app
+description: Rafiq Islamic App (MVP→V1) — Quran reader, offline audio, tafsir, translations, tasbih, reminders, qibla (AR stub), groups & donations stubs.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.2
+  shared_preferences: ^2.2.3
+  just_audio: ^0.9.36
+  audio_service: ^0.18.12
+  path_provider: ^2.1.3
+  dio: ^5.4.2
+  flutter_local_notifications: ^17.2.1
+  flutter_qiblah: ^2.2.0
+  geolocator: ^12.0.0
+  speech_to_text: ^6.6.2
+  adhan_dart: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/quran_sample.json
+    - assets/tafsir_brief_sample.json
+    - assets/tafsir_full_sample.json
+    - assets/tr_en_sample.json
+    - assets/tr_tr_sample.json
+    - assets/tr_fr_sample.json
+    - assets/reciters_manifest.json
